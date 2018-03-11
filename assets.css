@@ -54,3 +54,13 @@
   background-image: url(/img/selected-heroes/tracer.png); 
   background-position: 19px 2px;
 }
+
+[hero=winston]{ 
+  background-image: url(/img/selected-heroes/winston.png); 
+  background-position: 19px 2px;
+}
+
+[hero=zenyatta]{ 
+  background-image: url(/img/selected-heroes/zenyatta.png); 
+  background-position: 19px 2px;
+}
