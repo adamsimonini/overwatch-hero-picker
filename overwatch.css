@@ -13,7 +13,7 @@ body * {
 }
 
 .container{
-  background: url("/img/bastion.jpg") no-repeat;
+  background: url("/ui/overwatch/img/bastion.jpg") no-repeat;
   background-size: cover;
   overflow: auto;
   display: grid;
