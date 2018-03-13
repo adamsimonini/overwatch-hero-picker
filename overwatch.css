@@ -13,7 +13,7 @@ body * {
 }
 
 .container{
-  background: url("/img/bastion.jpg") no-repeat;
+  background: url("/img/wallpaper/bastion.jpg") no-repeat;
   background-size: cover;
   overflow: auto;
   display: grid;
@@ -88,7 +88,7 @@ body * {
   display: grid;
   grid-template-columns: 241px 213px 206px 177px;
   grid-column-gap: 32px;
-  padding-left: 15%;
+  justify-content: center;
 }
 
 .category{
@@ -173,7 +173,14 @@ body * {
 }
 
 .selection:hover{
-  transform: scale(1.1);
+  transform: scale(1.3);
+  transition: 500ms;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+
+.selected{
+  transform: scale(1.3);
   transition: 500ms;
   transition-timing-function: ease-in-out;
   cursor: pointer;
