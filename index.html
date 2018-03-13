@@ -6,21 +6,22 @@
   <title>SinaLite Team Builder</title>
   <link rel="stylesheet" href="overwatch.css">
   <link rel="stylesheet" href="assets.css">
+  <link rel="icon" type="/img/overwatch.png" href="img/">
 </head>
 <body>
 
   <div class="container">
 
     <div class="gameinfo">
-      <div class="match">
+      <div class="match"> 
         <div class="gametype">SinaLite</div>
         <div class="map">Canada</div>
       </div>
       <div class="character">Front-end</div>
     </div>
+
     <div class="selections">
-      
-      <div class="selection">
+      <div id="0" class="selection selected" onclick="selectedPlayer(this.id)">
         <div class="hero" hero="bastion"></div>
         <div class="info">
           <div class="name">Front-end</div>
@@ -28,7 +29,7 @@
         </div>
       </div>  
 
-      <div class="selection">
+      <div id="1" class="selection" onclick="selectedPlayer(this.id)">
         <div class="hero" hero="soldier-76"></div>
         <div class="info">
           <div class="name">Design</div>
@@ -36,7 +37,7 @@
         </div>
       </div>
 
-      <div class="selection">
+      <div id="2" class="selection" onclick="selectedPlayer(this.id)">
         <div class="hero" hero="winston"></div>
         <div class="info">
           <div class="name">Back-end</div>
@@ -44,7 +45,7 @@
         </div>
       </div>
 
-      <div class="selection">
+      <div id="3" class="selection" onclick="selectedPlayer(this.id)">
         <div class="hero" hero="hanzo"></div>
         <div class="info">
           <div class="name">Marketing</div>
@@ -52,7 +53,7 @@
         </div>
       </div>
 
-      <div class="selection">
+      <div id="4" class="selection" onclick="selectedPlayer(this.id)">
         <div class="hero" hero="mercy"></div>
         <div class="info">
           <div class="name">SEO</div>
@@ -60,51 +61,52 @@
         </div>
       </div>
 
-      <div class="selection">
+      <div id="5" class="selection" onclick="selectedPlayer(this.id)">
         <div class="hero" hero="zenyatta"></div>
         <div class="info">
           <div class="name">Content</div>
           <div class="hero-dropdown"></div>
         </div>
       </div>
-    
     </div>
+  <!-- END OF SLECTIONS -->
+
 
     <div class="heroes">
       <div class="category">
-        <div class="option genji"></div>
-        <div class="option mccree"></div>
-        <div class="option pharah"></div>
-        <div class="option reaper"></div>
-        <div class="option soldier-76"></div>
-        <div class="option sombra"></div>
-        <div class="option tracer"></div>
+        <div id="genji" onclick= "selectHero(this.id)" class="option genji"></div>
+        <div id="mccree" onclick= "selectHero(this.id)" class="option mccree"></div>
+        <div id="pharah" onclick= "selectHero(this.id)" class="option pharah"></div>
+        <div id="reaper" onclick= "selectHero(this.id)" class="option reaper"></div>
+        <div id="soldier-76" onclick= "selectHero(this.id)" class="option soldier-76"></div>
+        <div id="sombra" onclick= "selectHero(this.id)" class="option sombra"></div>
+        <div id="tracer" onclick= "selectHero(this.id)" class="option tracer"></div>
       </div>
 
       <div class="category">
-        <div class="option bastion"></div>
-        <div class="option hanzo"></div>
-        <div class="option junkrat"></div>
-        <div class="option mei"></div>
-        <div class="option torbjorn"></div>
-        <div class="option widowmaker"></div>
+        <div id="bastion" onclick= "selectHero(this.id)" class="option bastion"></div>
+        <div id="hanzo" onclick= "selectHero(this.id)" class="option hanzo"></div>
+        <div id="junkrat" onclick= "selectHero(this.id)" class="option junkrat"></div>
+        <div id="mei" onclick= "selectHero(this.id)" class="option mei"></div>
+        <div id="torbjorn" onclick= "selectHero(this.id)" class="option torbjorn"></div>
+        <div id="widowmaker" onclick= "selectHero(this.id)" class="option widowmaker"></div>
       </div>
 
       <div class="category">
-        <div class="option dva"></div>
-        <div class="option orisa"></div>
-        <div class="option reinhardt"></div>
-        <div class="option roadhog"></div>
-        <div class="option winston"></div>
-        <div class="option zarya"></div>
+        <div id="dva" onclick= "selectHero(this.id)" class="option dva"></div>
+        <div id="orisa" onclick= "selectHero(this.id)" class="option orisa"></div>
+        <div id="reinhardt" onclick= "selectHero(this.id)" class="option reinhardt"></div>
+        <div id="roadhog" onclick= "selectHero(this.id)" class="option roadhog"></div>
+        <div id="winston" onclick= "selectHero(this.id)" class="option winston"></div>
+        <div id="zarya" onclick= "selectHero(this.id)" class="option zarya"></div>
       </div>
 
       <div class="category">
-        <div class="option ana"></div>
-        <div class="option lucio"></div>
-        <div class="option mercy"></div>
-        <div class="option symmetra"></div>
-        <div class="option zenyatta"></div>
+        <div id="ana" onclick= "selectHero(this.id)" class="option ana"></div>
+        <div id="lucio" onclick= "selectHero(this.id)" class="option lucio"></div>
+        <div id="mercy" onclick= "selectHero(this.id)" class="option mercy"></div>
+        <div id="symmetra" onclick= "selectHero(this.id)" class="option symmetra"></div>
+        <div id="zenyatta" onclick= "selectHero(this.id)" class="option zenyatta"></div>
       </div>
     </div>
 
@@ -112,5 +114,11 @@
       <button>Select</button>
     </div>
   </div>
+
+  <script>
+      var team = document.querySelectorAll(".hero");
+      var players = document.querySelectorAll(".selection");
+  </script>
+  <script src="swapper.js"></script>
 </body>
 </html>
