@@ -3,68 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SinaLite Team Builder</title>
+  <title>Overwatch Team Builder</title>
   <link rel="stylesheet" href="overwatch.css">
   <link rel="stylesheet" href="assets.css">
-  <link rel="icon" type="/img/png" href="/ui/overwatch/img/overwatch.png">
+  <link rel="icon" type="/img/png" href="img/overwatch.png">
+  <script src="saver.js"></script>
 </head>
 <body>
-
   <div class="container">
 
     <div class="gameinfo">
       <div class="match"> 
-        <div class="gametype">SinaLite</div>
+        <input type="text" id="company" class="gametype" placeholder="*Company Name*" spellcheck="false"/>
         <div class="map">Canada</div>
       </div>
-      <div class="character">Front-end</div>
+      <div id="jobTitle" class="positionHeader">Front-end</div>
     </div>
 
     <div class="selections">
-      <div id="0" class="selection selected" onclick="selectedPlayer(this.id)">
+      <div id="0" class="selection selected" position="Front-end" onclick="selectedPlayer(this.id, this.getAttribute('position'))">
         <div class="hero" hero="bastion"></div>
         <div class="info">
-          <div class="name">Front-end</div>
+          <div class="position">Front-end</div>
           <div class="hero-dropdown"></div>
         </div>
       </div>  
 
-      <div id="1" class="selection" onclick="selectedPlayer(this.id)">
+      <div id="1" class="selection" position="Design" onclick="selectedPlayer(this.id, this.getAttribute('position'))">
         <div class="hero" hero="soldier-76"></div>
         <div class="info">
-          <div class="name">Design</div>
+          <div class="position">Design</div>
           <div class="hero-dropdown"></div>
         </div>
       </div>
 
-      <div id="2" class="selection" onclick="selectedPlayer(this.id)">
+      <div id="2" class="selection" position="Back-end" onclick="selectedPlayer(this.id, this.getAttribute('position'))">
         <div class="hero" hero="winston"></div>
         <div class="info">
-          <div class="name">Back-end</div>
+          <div class="position">Back-end</div>
           <div class="hero-dropdown"></div>
         </div>
       </div>
 
-      <div id="3" class="selection" onclick="selectedPlayer(this.id)">
+      <div id="3" class="selection" position="Marketing" onclick="selectedPlayer(this.id, this.getAttribute('position'))">
         <div class="hero" hero="hanzo"></div>
         <div class="info">
-          <div class="name">Marketing</div>
+          <div class="position">Marketing</div>
           <div class="hero-dropdown"></div>
         </div>
       </div>
 
-      <div id="4" class="selection" onclick="selectedPlayer(this.id)">
+      <div id="4" class="selection" position="SEO" onclick="selectedPlayer(this.id, this.getAttribute('position'))">
         <div class="hero" hero="mercy"></div>
         <div class="info">
-          <div class="name">SEO</div>
+          <div class="position">SEO</div>
           <div class="hero-dropdown"></div>
         </div>
       </div>
 
-      <div id="5" class="selection" onclick="selectedPlayer(this.id)">
+      <div id="5" class="selection" position="Content" onclick="selectedPlayer(this.id, this.getAttribute('position'))">
         <div class="hero" hero="zenyatta"></div>
         <div class="info">
-          <div class="name">Content</div>
+          <div class="position">Content</div>
           <div class="hero-dropdown"></div>
         </div>
       </div>
@@ -110,13 +110,14 @@
       </div>
     </div>
 
-    <div class="select">
-      <button>Select</button>
+    <div onclick="saveTeam()" class="share">
+      <button>Share</button>
     </div>
   </div>
 
   <script>
       var team = document.querySelectorAll(".hero");
+      console.log(team);
       var players = document.querySelectorAll(".selection");
   </script>
   <script src="swapper.js"></script>

@@ -12,6 +12,15 @@ body * {
   src: url("fonts/BigNoodleToo.ttf");
 }
 
+#company{
+  background: transparent;
+  border: none;
+}
+#company:focus{
+  outline: none;
+  border-bottom: solid #ce1631 1px;
+}
+
 .container{
   background: url("/ui/overwatch/img/wallpaper/bastion.jpg") no-repeat;
   background-size: cover;
@@ -58,7 +67,7 @@ body * {
   justify-content: center;
 }
 
-.name{
+.position{
   font-family: Overwatch;
   font-style: italic;
   font-size: 18px;
@@ -116,14 +125,14 @@ body * {
   cursor: pointer;
 }
 
-.select{
+.share{
   grid-area: select;
   display: flex;
   justify-content: center;
   padding-bottom: 5%;
 }
 
-.select button{
+.share button{
   background: #b47900;
   height: 32px;
   width: 110px;
@@ -135,7 +144,7 @@ body * {
   color: white;
 }
 
-.select button:hover{
+.share button:hover{
   background: red;
   z-index: 1;
   cursor: pointer;
@@ -162,7 +171,7 @@ body * {
   position: relative;
 }
 
-.character{
+.positionHeader{
   font-size: 55px;
   font-style: italic; 
   font-family: Overwatch;
