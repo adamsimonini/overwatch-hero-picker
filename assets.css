@@ -70,83 +70,83 @@
 /* MIDDLE EIGHT */
 
 [hero=ana]{ 
-  background-image: url(/img/selected-heroes/ana.png); 
+  background-image:  url(/ui/overwatch/img/selected-heroes/ana.png); 
   background-position: 18px 2px;
 }
 
 [hero=dva]{ 
-  background-image: url(/img/selected-heroes/dva.png); 
+  background-image:  url(/ui/overwatch/img/selected-heroes/dva.png); 
   background-position: 18px 2px;
 }
 
 [hero=junkrat]{ 
-  background-image: url(/img/selected-heroes/junkrat.png); 
+  background-image:  url(/ui/overwatch/img/selected-heroes/junkrat.png); 
   background-position: 18px 2px;
 }
 
 [hero=lucio]{ 
-  background-image: url(/img/selected-heroes/lucio.png); 
+  background-image:  url(/ui/overwatch/img/selected-heroes/lucio.png); 
   background-position: 9px 2px;
 }
 
 [hero=mccree]{ 
-  background-image: url(/img/selected-heroes/mccree.png); 
+  background-image:  url(/ui/overwatch/img/selected-heroes/mccree.png); 
   background-position: 7px 2px;
 }
 
 [hero=mei]{ 
-  background-image: url(/img/selected-heroes/mei.png); 
+  background-image:  url(/ui/overwatch/img/selected-heroes/mei.png); 
   background-position: 19px 2px;
 }
 
 [hero=orisa]{ 
-  background-image: url(/img/selected-heroes/orisa.png); 
+  background-image:  url(/ui/overwatch/img/selected-heroes/orisa.png); 
   background-position: 19px 2px;
 }
 
 [hero=pharah]{ 
-  background-image: url(/img/selected-heroes/pharah.png); 
+  background-image:  url(/ui/overwatch/img/selected-heroes/pharah.png); 
   background-position: 19px 2px;
 }
 
 /* LAST 8 */
 
 [hero=reaper]{ 
-  background-image: url(/img/selected-heroes/reaper.png); 
+  background-image:  url(/ui/overwatch/img/selected-heroes/reaper.png); 
   background-position: 18px 2px;
 }
 
 [hero=reinhardt]{ 
-  background-image: url(/img/selected-heroes/reinhardt.png); 
+  background-image:  url(/ui/overwatch/img/selected-heroes/reinhardt.png); 
   background-position: 18px 2px;
 }
 
 [hero=roadhog]{ 
-  background-image: url(/img/selected-heroes/roadhog.png); 
+  background-image:  url(/ui/overwatch/img/selected-heroes/roadhog.png); 
   background-position: 18px 2px;
 }
 
 [hero=sombra]{ 
-  background-image: url(/img/selected-heroes/sombra.png); 
+  background-image:  url(/ui/overwatch/img/selected-heroes/sombra.png); 
   background-position: 9px 2px;
 }
 
 [hero=symmetra]{ 
-  background-image: url(/img/selected-heroes/symmetra.png); 
+  background-image:  url(/ui/overwatch/img/selected-heroes/symmetra.png); 
   background-position: 7px 2px;
 }
 
 [hero=torbjorn]{ 
-  background-image: url(/img/selected-heroes/torbjorn.png); 
+  background-image:  url(/ui/overwatch/img/selected-heroes/torbjorn.png); 
   background-position: 19px 2px;
 }
 
 [hero=zarya]{ 
-  background-image: url(/img/selected-heroes/zarya.png); 
+  background-image:  url(/ui/overwatch/img/selected-heroes/zarya.png); 
   background-position: 19px 2px;
 }
 
 [hero=genji]{ 
-  background-image: url(/img/selected-heroes/genji.png); 
+  background-image:  url(/ui/overwatch/img/selected-heroes/genji.png); 
   background-position: 19px 2px;
 }
