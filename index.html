@@ -9,6 +9,7 @@
   <link rel="icon" type="/img/png" href="img/overwatch.png">
   <script src="saveTeam.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 <body>
@@ -23,7 +24,7 @@
     </div>
 
     <div class="selections">
-      <div id="0" class="selection selected" position="Front-end" onclick="selectedPlayer(this.id, this.getAttribute('position'))">
+      <div id="0" class="selection selected" data-tilt data-tilt-max="30" data-tilt-scale="1.4" position="Front-end" onclick="selectedPlayer(this.id, this.getAttribute('position'))">
         <div class="hero" hero="bastion"></div>
         <div class="info">
           <div class="position">Front-end</div>
@@ -31,7 +32,7 @@
         </div>
       </div>  
 
-      <div id="1" class="selection" position="Design" onclick="selectedPlayer(this.id, this.getAttribute('position'))">
+      <div id="1" class="selection" position="Design" data-tilt data-tilt-max="30" data-tilt-scale="1.4" onclick="selectedPlayer(this.id, this.getAttribute('position'))">
         <div class="hero" hero="soldier-76"></div>
         <div class="info">
           <div class="position">Design</div>
@@ -39,7 +40,7 @@
         </div>
       </div>
 
-      <div id="2" class="selection" position="Back-end" onclick="selectedPlayer(this.id, this.getAttribute('position'))">
+      <div id="2" class="selection" position="Back-end" data-tilt data-tilt-max="30" data-tilt-scale="1.4" onclick="selectedPlayer(this.id, this.getAttribute('position'))">
         <div class="hero" hero="winston"></div>
         <div class="info">
           <div class="position">Back-end</div>
@@ -47,7 +48,7 @@
         </div>
       </div>
 
-      <div id="3" class="selection" position="Marketing" onclick="selectedPlayer(this.id, this.getAttribute('position'))">
+      <div id="3" class="selection" position="Marketing" data-tilt data-tilt-max="30" data-tilt-scale="1.4" onclick="selectedPlayer(this.id, this.getAttribute('position'))">
         <div class="hero" hero="hanzo"></div>
         <div class="info">
           <div class="position">Marketing</div>
@@ -55,7 +56,7 @@
         </div>
       </div>
 
-      <div id="4" class="selection" position="SEO" onclick="selectedPlayer(this.id, this.getAttribute('position'))">
+      <div id="4" class="selection" position="SEO" data-tilt data-tilt-max="30" data-tilt-scale="1.4" onclick="selectedPlayer(this.id, this.getAttribute('position'))">
         <div class="hero" hero="mercy"></div>
         <div class="info">
           <div class="position">SEO</div>
@@ -63,7 +64,7 @@
         </div>
       </div>
 
-      <div id="5" class="selection" position="Content" onclick="selectedPlayer(this.id, this.getAttribute('position'))">
+      <div id="5" class="selection" position="Content" data-tilt data-tilt data-tilt-max="30" data-tilt-scale="1.4" onclick="selectedPlayer(this.id, this.getAttribute('position'))">
         <div class="hero" hero="zenyatta"></div>
         <div class="info">
           <div class="position">DevOps</div>
@@ -127,7 +128,12 @@
           document.getElementById('company').removeAttribute("autofocus");
         }
       });
+
+    $('.js-tilt').tilt({
+      scale: 1.2
+    });
   </script>
   <script src="swapper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
 </body>
 </html>
