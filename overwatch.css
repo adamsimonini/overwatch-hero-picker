@@ -55,22 +55,6 @@ body * {
 }
 
 @media only screen and (max-width: 959px){
-  /* .container{
-    background: url("/img/wallpaper/bastion-min.jpg") no-repeat;
-    background-size: cover;
-    overflow: auto;
-    display: grid;
-    height: 100vh;
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-rows: 268px 39px 140px 83px 1fr;
-    grid-template-areas: 
-    "selections"
-      "top"
-      "countdown"
-      "heroes"
-      "select"
-  } */
   .container{
     background: url("/img/wallpaper/bastion-min.jpg") no-repeat;
     background-size: cover;
@@ -92,7 +76,7 @@ body * {
   }
   .positionHeader{
     font-size: calc(5vw + 16px) !important;
-    margin-left: 10%;
+    margin-left: 5%;
   }
   .gametype, .match{
     text-align: center !important;
