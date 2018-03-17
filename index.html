@@ -7,14 +7,16 @@
   <link rel="stylesheet" href="overwatch.css">
   <link rel="stylesheet" href="assets.css">
   <link rel="icon" type="/img/png" href="img/overwatch.png">
-  <script src="saver.js"></script>
+  <script src="saveTeam.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+
 </head>
 <body>
   <div class="container">
 
     <div class="gameinfo">
       <div class="match"> 
-        <input type="text" id="company" class="gametype" placeholder="*Company Name*" spellcheck="false"/>
+        <input autofocus type="text" id="company" class="gametype" placeholder="*Company Name Here*" spellcheck="false"/>
         <div class="map">Canada</div>
       </div>
       <div id="jobTitle" class="positionHeader">Front-end</div>
@@ -64,13 +66,12 @@
       <div id="5" class="selection" position="Content" onclick="selectedPlayer(this.id, this.getAttribute('position'))">
         <div class="hero" hero="zenyatta"></div>
         <div class="info">
-          <div class="position">Content</div>
+          <div class="position">DevOps</div>
           <div class="hero-dropdown"></div>
         </div>
       </div>
     </div>
   <!-- END OF SLECTIONS -->
-
 
     <div class="heroes">
       <div class="category">
@@ -110,15 +111,22 @@
       </div>
     </div>
 
-    <div onclick="saveTeam()" class="share">
-      <button>Share</button>
+    <div class="share">
+      <button id="share" class='btn' onclick='saveTeam()' data-clipboard-text="">Share</button>
     </div>
   </div>
 
+  <script src="teamFiller.js"></script>
   <script>
       var team = document.querySelectorAll(".hero");
-      console.log(team);
       var players = document.querySelectorAll(".selection");
+      teamFiller(window.location.href);
+
+      document.addEventListener('DOMContentLoaded', function(){
+        if(document.getElementById('company').value){
+          document.getElementById('company').removeAttribute("autofocus");
+        }
+      });
   </script>
   <script src="swapper.js"></script>
 </body>

@@ -22,7 +22,7 @@ body * {
 }
 
 .container{
-  background: url("/img/wallpaper/bastion.jpg") no-repeat;
+  background: url("/img/wallpaper/bastion-min.jpg") no-repeat;
   background-size: cover;
   overflow: auto;
   display: grid;
