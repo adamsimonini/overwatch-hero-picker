@@ -1,7 +1,7 @@
 function teamFiller(url){
     if(url.indexOf('++') >= 0){
         var split = url.split('++');
-        var companyName = split[0].slice(split[0].indexOf("?") + 1).replace(/%20/g, " ") ;
+        var companyName = split[0].slice(split[0].indexOf("?") + 1).replace(/_/g, " ") ;
         document.getElementById('company').value= companyName;
         var teamArray = split[1].split('+');
         for(i=0;i<team.length;i++){
