@@ -76,7 +76,11 @@ body * {
   }
   .positionHeader{
     font-size: calc(5vw + 16px) !important;
+<<<<<<< HEAD
     margin-left: 5%;
+=======
+    margin-left: 10%;
+>>>>>>> ec2bea101f6e7eb50f668052168f19ad61a9ee1b
   }
   .gametype, .match{
     text-align: center !important;
