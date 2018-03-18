@@ -5,7 +5,8 @@ function saveTeam(){
     for(i=0;i<team.length;i++){
       newTeam += ("+" + team[i].getAttribute("hero"));
     }
-    console.log(newTeam);
     document.getElementById('share').setAttribute('data-clipboard-text', newTeam);
     new ClipboardJS('.btn');
+    document.getElementById('copied').style.display = "unset";
+    document.getElementById('copied').scrollIntoView();
 }
