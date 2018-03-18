@@ -22,7 +22,7 @@ body * {
 }
 @media only screen and (min-width: 960px){
   .container{
-    background: url("/img/wallpaper/bastion-min.jpg") no-repeat;
+    background: url("/img/wallpaper/tracer-min.jpg") no-repeat;
     background-size: cover;
     overflow: auto;
     display: grid;
@@ -56,7 +56,7 @@ body * {
 
 @media only screen and (max-width: 959px){
   .container{
-    background: url("/img/wallpaper/bastion-min.jpg") no-repeat;
+    background: url("/img/wallpaper/tracer-min.jpg") no-repeat;
     background-size: cover;
     overflow-y: scroll;
     height: 100vh;
@@ -171,11 +171,18 @@ body * {
   cursor: pointer;
 }
 
+#copied{
+  color: white;
+  display: none;
+}
+
 .share{
+  text-align: center;
   grid-area: select;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 5%;
+  align-items: center;
 }
 
 .share button{

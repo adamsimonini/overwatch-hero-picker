@@ -17,7 +17,7 @@
 
     <div class="gameinfo">
       <div class="match"> 
-        <input autofocus type="text" id="company" class="gametype" placeholder="*Company Name Here*" spellcheck="false"/>
+        <input autofocus type="text" id="company" class="gametype" placeholder="*Group Name Here*" spellcheck="false"/>
       </div>
       <div id="jobTitle" class="positionHeader">Front-end</div>
     </div>
@@ -112,7 +112,10 @@
     </div>
 
     <div class="share">
-      <button id="share" class='btn' onclick='saveTeam()' data-clipboard-text="">Share</button>
+      <div style="width: 100%">
+        <button id="share" class='btn' onclick='saveTeam()' data-clipboard-text="">Share</button>
+      </div>
+      <p id="copied">link copied to clipboard</p>
     </div>
   </div>
 
@@ -127,10 +130,6 @@
           document.getElementById('company').removeAttribute("autofocus");
         }
       });
-
-    $('.js-tilt').tilt({
-      scale: 1.2
-    });
   </script>
   <script src="swapper.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
